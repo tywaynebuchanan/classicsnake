@@ -1,0 +1,104 @@
+body{
+
+	margin: 0;
+	padding: 10;
+	justify-content: center;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	background: #093045;
+	color: #ffff;
+}
+
+.container{
+
+	margin: 0 auto;
+	width: 400px;
+	border: 1px solid black;
+	height: 50vh;
+	border-radius: 25px;
+	border: 2px solid #EED369;
+}
+
+.wrapper{
+	max-width: 920px;
+	margin: 0 auto;
+	justify-content: left;
+}
+
+h1, h2{
+	margin: 0;
+}
+
+.grid{
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #ffff;
+	margin: 30px 20px 20px 50px;
+}
+
+.square{
+	width: 30px;
+	height: 30px;
+	background: #f3f3f3;
+
+}
+
+button{
+	padding: 10px;
+	font-size: 20px;
+	margin: 10px;
+	background: #EED369 ;
+	border:1px solid #093045;
+	color: #383D3E;
+	cursor: pointer;
+	border-radius: 25px;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.snake{
+	background-color: #093045;
+}
+
+.apple{
+	background: #B00202;
+}
+
+.gameover{
+	display: none;
+	font-size: 50px;
+	margin: 0 auto;
+}
+
+.button{
+	display: none;
+}
+.buttons{
+	display: none;
+}
+
+@media all and (max-width:375px)
+{
+	.container{
+		width: 350px;
+		height: 50vh;
+	}
+
+	.grid{
+		margin: 0 auto;
+	}
+
+	.button{
+		display: block;
+		margin: 0;
+	}
+
+	.buttons{
+		display: block;
+		margin: 0;
+	}
+}
